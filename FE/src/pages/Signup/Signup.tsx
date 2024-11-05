@@ -32,7 +32,7 @@ const Signup: React.FC = () => {
           boxShadow: '0 10px 20px rgba(0, 0, 0, 0.3)',
           transition: 'transform 0.2s',
           '&:hover': {
-            transform: 'scale(1.03)', // Slight scaling for 3D effect on hover
+            transform: 'scale(1.03)', 
           },
         }}
       >        <Typography variant="h4" align="center">Signup</Typography>

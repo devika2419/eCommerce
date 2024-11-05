@@ -12,11 +12,11 @@ const Login: React.FC = () => {
     e.preventDefault();
     try {
       const response = await axios.post('http://localhost:8000/api/login', { username, password });
-      const { token, userId } = response.data; // Assuming response contains both token and userId
-      localStorage.setItem('token', token); // Store the JWT token in local storage
-      localStorage.setItem('userId', userId.toString()); // Store the userId in local storage
+      const { token, userId } = response.data; 
+      localStorage.setItem('token', token); 
+      localStorage.setItem('userId', userId.toString()); 
       console.log('Login successful:', token);
-      navigate('/products'); // Redirect to the products page after login
+      navigate('/products'); 
     } catch (error) {
       console.error('Error logging in:', error);
       alert('Login failed! Please check your credentials.');
@@ -35,7 +35,7 @@ const Login: React.FC = () => {
           boxShadow: '0 10px 20px rgba(0, 0, 0, 0.3)',
           transition: 'transform 0.2s',
           '&:hover': {
-            transform: 'scale(1.03)', // Slight scaling for 3D effect on hover
+            transform: 'scale(1.03)', 
           },
         }}
       >

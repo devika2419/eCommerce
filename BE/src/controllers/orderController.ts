@@ -29,7 +29,7 @@ export const createOrder = async (req: Request, res: Response) => {
 
 // Add an item to the cart
 export const addItemToCart = async (req: Request, res: Response) => {
-  const { userId, productId} = req.body; // Getting from body
+  const { userId, productId} = req.body; 
 
   try {
     const [result] = await pool.query(
@@ -45,7 +45,7 @@ export const addItemToCart = async (req: Request, res: Response) => {
 
 // Get all items in the user's cart
 export const getOrderItems = async (req: Request, res: Response) => {
-  const { userId } = req.body; // Getting from body
+  const { userId } = req.body; 
 
   try {
     const [rows] = await pool.query(
@@ -61,7 +61,7 @@ export const getOrderItems = async (req: Request, res: Response) => {
 
 // Remove an item from the cart
 export const removeItemFromCart = async (req: Request, res: Response) => {
-  const { userId, productId } = req.body; // Getting from body
+  const { userId, productId } = req.body; 
 
   try {
     await pool.query(
@@ -77,7 +77,7 @@ export const removeItemFromCart = async (req: Request, res: Response) => {
 
 // Clear the user's cart
 export const clearCart = async (req: Request, res: Response) => {
-  const { userId } = req.body; // Getting from body
+  const { userId } = req.body; 
 
   try {
     await pool.query('DELETE FROM cart WHERE user_id = ?', [userId]);

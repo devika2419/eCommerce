@@ -59,7 +59,7 @@ const Home: React.FC = () => {
                   height="140"
                   image={categoryImages[category]}
                   alt={category}
-                  sx={{ objectFit: 'contain' }} // Ensures the entire image fits within the card
+                  sx={{ objectFit: 'contain' }} 
                 />
                 <CardContent>
                   <Typography variant="h6" align="center">{category}</Typography>

@@ -63,10 +63,10 @@ const Checkout: React.FC = () => {
   
 
   const clearCart = async () => {
-    const userId = localStorage.getItem('userId'); // Get user ID for clearing cart
+    const userId = localStorage.getItem('userId'); 
     if (userId) {
       await Promise.all(cartItems.map(item =>
-        axios.put(`http://localhost:8000/api/cart/remove`, { id: item.id, userId: Number(userId) }) // Update endpoint accordingly
+        axios.put(`http://localhost:8000/api/cart/remove`, { id: item.id, userId: Number(userId) }) 
       ));
       setCartItems([]);
       setTotalAmount(0);

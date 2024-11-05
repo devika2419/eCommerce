@@ -20,14 +20,19 @@ app.use(cors());
 app.use(express.json());
 
 // Route setup
+
+//product Routes
 app.get('/api/products', getAllProducts); 
 app.post('/api/products/id', getProductById);
 app.put('/api/products/id/status', updateProductStatus);
 app.get('/api/products/checkout', getCartItems);
 app.get('/api/products/category/:category', getProductsByCategory);
 
+//user Routes
 app.post('/api/login', login);
 app.post('/api/signup', createUser); 
+
+//cart Routes
 app.post('/api/cart/add', addItemToCart); 
 app.post('/api/cart', getOrderItems); 
 app.put('/api/cart/remove', removeItemFromCart); 
