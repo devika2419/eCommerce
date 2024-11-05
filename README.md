@@ -9,9 +9,9 @@ This is the full-stack codebase for the [eCommerce Website](https://github.com/d
 
 ### Frontend
 
-- **React** (JavaScript library for building user interfaces)
-- **TypeScript** (Typed JavaScript)
-- **Vite** (Next Generation Frontend Tooling)
+- **React**: A JavaScript library for building user interfaces.
+- **TypeScript**: A typed superset of JavaScript that compiles to plain JavaScript, enhancing code quality and maintainability.
+- **Vite**: A next-generation frontend tooling that offers a faster development experience.
 - **Material UI** (React UI framework)
 - **Axios** (HTTP client for making API requests)
 
