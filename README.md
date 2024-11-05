@@ -24,7 +24,6 @@ This is the backend codebase for the [eCommerce Website](https://github.com/devi
 - **Node.js** (JavaScript runtime)
 - **Express** (API framework)
 - **MySQL** (relational database)
-- **Prisma ORM** (for database modeling)
 - **JWT** (for user authentication)
 - **dotenv** (for environment variables)
 
